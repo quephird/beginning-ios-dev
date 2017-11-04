@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Restructure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tQn-I7-WS3"/>
+                        <viewControllerLayoutGuide type="bottom" id="qRA-3A-bRO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vw4-PO-Qf1">
+                                <rect key="frame" x="20" y="20" width="328" height="374"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSc-Oy-jGn">
+                                <rect key="frame" x="368" y="20" width="164" height="177"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Action one"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZP-sw-7yA">
+                                <rect key="frame" x="552" y="20" width="164" height="177"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Action two"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jho-TF-A2l" userLabel="Action Button3">
+                                <rect key="frame" x="368" y="217" width="164" height="177"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Action three"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61g-3E-5mb" userLabel="Action Button4">
+                                <rect key="frame" x="552" y="217" width="164" height="177"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Action four"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="top" secondItem="ZSc-Oy-jGn" secondAttribute="bottom" constant="20" id="1Ki-Lm-98c"/>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="width" secondItem="oZP-sw-7yA" secondAttribute="width" id="1fB-YP-0fL"/>
+                            <constraint firstItem="61g-3E-5mb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3j1-UF-X4l"/>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="baseline" secondItem="oZP-sw-7yA" secondAttribute="baseline" id="7BX-QR-psV"/>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="top" secondItem="vw4-PO-Qf1" secondAttribute="bottom" constant="20" id="7cZ-gk-lv6"/>
+                            <constraint firstAttribute="trailing" secondItem="vw4-PO-Qf1" secondAttribute="trailing" constant="20" id="FNp-iV-hhw"/>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="width" secondItem="61g-3E-5mb" secondAttribute="width" id="Fuw-8C-eVx"/>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HqL-Ia-Obl"/>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="height" secondItem="61g-3E-5mb" secondAttribute="height" id="MzK-Jx-6fh"/>
+                            <constraint firstItem="vw4-PO-Qf1" firstAttribute="width" secondItem="ZSc-Oy-jGn" secondAttribute="width" multiplier="2" id="QUK-Yb-Tnb"/>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="baseline" secondItem="61g-3E-5mb" secondAttribute="baseline" id="VqK-h8-EBx"/>
+                            <constraint firstItem="vw4-PO-Qf1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Zuh-dS-Td2"/>
+                            <constraint firstItem="vw4-PO-Qf1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Zzt-b2-RRA"/>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="a0H-XQ-ulO"/>
+                            <constraint firstItem="oZP-sw-7yA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="anU-fz-tKK"/>
+                            <constraint firstItem="vw4-PO-Qf1" firstAttribute="height" secondItem="ZSc-Oy-jGn" secondAttribute="height" multiplier="2" id="bth-Zu-Dw2"/>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="leading" secondItem="vw4-PO-Qf1" secondAttribute="trailing" id="cga-S0-A1F">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="vw4-PO-Qf1" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" constant="-20" id="dia-dJ-vVW">
+                                <variation key="heightClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="dy9-Uq-LND"/>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="height" secondItem="jho-TF-A2l" secondAttribute="height" id="eOC-g1-yPE"/>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="leading" secondItem="ZSc-Oy-jGn" secondAttribute="leading" id="mRU-4h-cBC"/>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="height" secondItem="oZP-sw-7yA" secondAttribute="height" id="rEf-sA-Y5V"/>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="te2-0N-7m5"/>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="trailing" secondItem="61g-3E-5mb" secondAttribute="leading" constant="-20" id="wRP-j8-u22"/>
+                            <constraint firstItem="jho-TF-A2l" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" constant="-20" id="y1O-Oj-zni"/>
+                            <constraint firstItem="ZSc-Oy-jGn" firstAttribute="trailing" secondItem="oZP-sw-7yA" secondAttribute="leading" constant="-20" id="zbu-IX-EiT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QUK-Yb-Tnb"/>
+                                <exclude reference="dia-dJ-vVW"/>
+                                <exclude reference="cga-S0-A1F"/>
+                                <exclude reference="dy9-Uq-LND"/>
+                                <exclude reference="HqL-Ia-Obl"/>
+                                <exclude reference="mRU-4h-cBC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="FNp-iV-hhw"/>
+                                <include reference="QUK-Yb-Tnb"/>
+                                <include reference="Zzt-b2-RRA"/>
+                                <exclude reference="bth-Zu-Dw2"/>
+                                <include reference="dia-dJ-vVW"/>
+                                <exclude reference="7cZ-gk-lv6"/>
+                                <include reference="cga-S0-A1F"/>
+                                <include reference="dy9-Uq-LND"/>
+                                <exclude reference="te2-0N-7m5"/>
+                                <include reference="zbu-IX-EiT"/>
+                                <exclude reference="a0H-XQ-ulO"/>
+                                <include reference="mRU-4h-cBC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton1" destination="ZSc-Oy-jGn" id="poa-mP-yN7"/>
+                        <outlet property="actionButton2" destination="oZP-sw-7yA" id="zqc-2c-Lhr"/>
+                        <outlet property="contentView" destination="vw4-PO-Qf1" id="GXF-2J-96W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123.91304347826089" y="121.05978260869566"/>
+        </scene>
+    </scenes>
+</document>
